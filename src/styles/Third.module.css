@@ -1,0 +1,85 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.titles h2{
+    color: hsl(213, 96%, 18%);
+    font-size: x-large;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.titles p{
+    color: hsl(231, 11%, 63%);
+    font-weight: 100;
+    margin-top: 5px;
+}
+
+.Addons{
+display: flex;
+flex-direction: column;
+}
+.Addon{
+display: flex;
+justify-content: space-between;
+align-items: center;
+border: 1px solid hsl(231, 11%, 63%);
+border-radius: 10px;
+padding: 20px 10px;
+}
+.AddonLeft{
+display: flex;
+align-items: center;
+gap: 10px;
+}
+.AddonLeft h5{
+font-weight: 500;  
+padding-bottom: 5px; 
+}
+.AddonLeft input{
+    width: 18px;
+    height: 18px;
+    accent-color: hsl(243, 100%, 62%);
+}
+
+.AddonLeft p{
+    font-size: small;
+    color: hsl(231, 11%, 63%);
+}
+.AddonRight{
+color: hsl(243, 100%, 62%);
+font-size: small;
+font-weight: 500;
+}
+.checked{
+    background-color: hsl(217, 100%, 97%);
+    border: 1px solid hsl(243, 100%, 62%);
+}
+
+@media only screen
+and (min-width : 768px) {
+    .container{
+        gap: 40px;
+    }
+    .Addons{
+        gap: 20px;
+    }
+
+}
+
+@media only screen
+and (max-width : 768px) {
+    .container{
+        gap: 10px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 3px 7px 0 #dddddd;
+    }
+    .Addons{
+        padding-top: 15px;
+        gap: 10px;
+    }
+    
+
+}

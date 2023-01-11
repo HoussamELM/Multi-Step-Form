@@ -1,0 +1,67 @@
+#root {
+  margin: 0 auto;
+}
+
+/* Smartphones */
+@media only screen
+and (max-width : 768px) {
+  body{
+    background-color: hsl(229, 24%, 87%)
+  }
+  .App{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(231, 100%, 99%);
+    border-radius: 20px;
+    width: 370px;
+    height: 650px;
+    background-image: url('../assets/bg-sidebar-mobile.svg');
+    background-repeat: no-repeat;
+  }
+  .RightContainer{
+    position: relative;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+/* Larger screens */
+@media only screen
+and (min-width : 768px)
+ {
+  .App{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    width: 48vw;
+    min-width: 800px ;
+    height: 600px;
+  }
+  .RightContainer{
+    position: relative;
+    width: 70%;
+    height: 100%;
+    padding: 0 80px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .leftContainer{
+    background-image: url('../assets/bg-sidebar-desktop.svg');
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 20px;
+    width: 30%;
+    height: 100%;
+  }
+}

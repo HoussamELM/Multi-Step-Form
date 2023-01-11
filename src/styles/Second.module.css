@@ -1,0 +1,103 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cards{
+        display: flex;
+}
+
+.titles h2{
+    color: hsl(213, 96%, 18%);
+    font-size: x-large;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.titles,.card p{
+    color: hsl(231, 11%, 63%);
+    font-weight: 100;
+    margin-top: 5px;
+}
+.card h3{
+    font-weight: 700;
+}
+.card h6{
+    padding-top: 5px;
+    font-size: small;
+    font-weight: 500;
+}
+.card{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+    border: 1px solid hsl(229, 24%, 87%);
+    border-radius: 10px;
+}
+
+.plan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: hsl(229, 24%, 96%);
+    padding: 10px;
+    border-radius: 10px;
+}
+.planInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.Togglecircle{
+    transform: translate(35%, 0%);
+}
+.toggleButton{
+    border: none;
+    padding: 0;
+    width: fit-content;
+}
+
+
+@media only screen
+and (min-width : 768px) {
+    .container{
+        gap: 40px;
+    }
+    .cards{
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    } 
+    .card{
+    flex-direction: column;
+    padding: 25px 15px;
+    flex: 1 1 0;
+    width: 0;
+    }
+
+}
+
+@media only screen
+and (max-width : 768px) {
+    .container{
+        gap: 10px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 3px 7px 0 #dddddd;
+    }
+    .cards{
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+    } 
+    .card{
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 15px;
+    }
+    
+
+}

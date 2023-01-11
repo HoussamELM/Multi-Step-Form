@@ -1,0 +1,95 @@
+
+@media only screen
+and (min-width : 768px) {
+    .container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+    }
+    
+    .titles h2{
+        color: hsl(213, 96%, 18%);
+        font-size: xx-large;
+        font-weight: 900;
+        margin-bottom: 10px;
+    }
+    .titles p{
+        color: hsl(231, 11%, 63%);
+        font-weight: 100;
+    }
+    
+    .inputs{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .input{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .input input{
+        padding: 14px;
+        border: 1px solid hsl(231, 11%, 63%);
+        border-radius: 10px;
+    }
+    .labels{
+        display: flex;
+        justify-content: space-between;
+        font-size: small;
+    }
+    .required{
+        color: red;
+    }
+}
+
+@media only screen
+and (max-width : 768px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 3px 7px 0 #dddddd;
+    }
+    
+    .titles h2{
+        color: hsl(213, 96%, 18%);
+        font-size: x-large;
+        font-weight: 900;
+        margin-bottom: 10px;
+    }
+    .titles p{
+        color: hsl(231, 11%, 63%);
+        font-weight: 100;
+    }
+    
+    .inputs{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .input{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .input input{
+        padding: 14px;
+        border: 1px solid hsl(231, 11%, 63%);
+        border-radius: 10px;
+    }
+    .labels{
+        display: flex;
+        justify-content: space-between;
+        font-size: small;
+    }
+    .required{
+        color: red;
+    }
+}
