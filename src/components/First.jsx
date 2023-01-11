@@ -5,7 +5,6 @@ import { useGlobalContext } from '../context'
 
 const handleChange = (e) => {
    e.preventDefault()         
-   console.log(e.target.value)
 }
 
 const First = () => {
@@ -21,7 +20,7 @@ const First = () => {
                 <label htmlFor="name">Name</label>
                 <label htmlFor="name" className={styles.required}>This field is required</label>
                 </div>
-                    <input type="text" id='name' placeholder='e.g. Houssam El Masoudi' onChange={handleChange}/>
+                    <input type="text" id='name' placeholder='e.g. Houssam El Masoudi'/>
                 </div>
                 <div className={styles.input}>
                 <div className={styles.labels}>
