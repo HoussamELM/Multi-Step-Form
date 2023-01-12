@@ -7,7 +7,7 @@ console.log(addons)
 
 const Third = () => {
 
-  const {AddonPrice} = useGlobalContext()
+  const {AddonPrice,formData,setFormData} = useGlobalContext()
 
   const [checked, setChecked] = useState([false, false, false])
 

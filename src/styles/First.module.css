@@ -1,3 +1,33 @@
+.titles h2{
+    color: hsl(213, 96%, 18%);
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.input input{
+    padding: 14px;
+    border: 1px solid hsl(231, 11%, 63%);
+    border-radius: 10px;
+}
+.labels{
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+}
+.required{
+    color: red;
+}
+.hidden{
+    display: none;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+}
 
 @media only screen
 and (min-width : 768px) {
@@ -10,39 +40,13 @@ and (min-width : 768px) {
     }
     
     .titles h2{
-        color: hsl(213, 96%, 18%);
         font-size: xx-large;
-        font-weight: 900;
-        margin-bottom: 10px;
-    }
-    .titles p{
-        color: hsl(231, 11%, 63%);
-        font-weight: 100;
     }
     
     .inputs{
-        display: flex;
-        flex-direction: column;
         gap: 40px;
     }
-    .input{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-    .input input{
-        padding: 14px;
-        border: 1px solid hsl(231, 11%, 63%);
-        border-radius: 10px;
-    }
-    .labels{
-        display: flex;
-        justify-content: space-between;
-        font-size: small;
-    }
-    .required{
-        color: red;
-    }
+
 }
 
 @media only screen
@@ -59,37 +63,11 @@ and (max-width : 768px) {
     }
     
     .titles h2{
-        color: hsl(213, 96%, 18%);
         font-size: x-large;
-        font-weight: 900;
-        margin-bottom: 10px;
-    }
-    .titles p{
-        color: hsl(231, 11%, 63%);
-        font-weight: 100;
-    }
-    
+    }    
     .inputs{
-        display: flex;
-        flex-direction: column;
         gap: 20px;
     }
-    .input{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-    .input input{
-        padding: 14px;
-        border: 1px solid hsl(231, 11%, 63%);
-        border-radius: 10px;
-    }
-    .labels{
-        display: flex;
-        justify-content: space-between;
-        font-size: small;
-    }
-    .required{
-        color: red;
-    }
+
+
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from '../styles/First.module.css'
+import '../styles/App.css'
 import NextButton from './NextButton'
 import { useGlobalContext } from '../context'
 
@@ -8,6 +9,9 @@ const handleChange = (e) => {
 }
 
 const First = () => {
+
+    const {handleNameChange,handleEmailChange,handlePhoneChange,formData,valid} = useGlobalContext()
+
     return (
         <form className={styles.container}>
             <div className={styles.titles}>
@@ -18,23 +22,25 @@ const First = () => {
                 <div className={styles.input}>
                 <div className={styles.labels}>
                 <label htmlFor="name">Name</label>
-                <label htmlFor="name" className={styles.required}>This field is required</label>
+                <label htmlFor="name" className={formData.name.length < 3 ? styles.required : styles.hidden}>This field is required</label>
                 </div>
-                    <input type="text" id='name' placeholder='e.g. Houssam El Masoudi'/>
+                    <input type="text" id='name' placeholder='e.g. Houssam El Masoudi' required onChange={handleNameChange}/>
                 </div>
                 <div className={styles.input}>
                 <div className={styles.labels}>
                 <label htmlFor="email">Email Address</label>
-                <label htmlFor="email" className={styles.required}>This field is required</label>
+                <label htmlFor="email" className={formData.email.length < 3 ? styles.required : styles.hidden}>This field is required</label>
                 </div>
-                    <input type="text" id='email' placeholder='e.g. Houssam@gmail.com'/>
+                    <input type="text" id='email' placeholder='e.g. Houssam@gmail.com'
+                        onChange={handleEmailChange}
+                    />
                 </div>
                 <div className={styles.input}>
                 <div className={styles.labels}>
                 <label htmlFor="phone">Phone Number</label>
-                <label htmlFor="phone" className={styles.required}>This field is required</label>
+                <label htmlFor="phone" className={valid.phone ? styles.hidden : styles.required}>This field is required</label>
                 </div>
-                    <input type="text" id='phone' placeholder='e.g. +212 619 834 123'/>
+                    <input type="tel" id='phone' placeholder='e.g. +212 619 834 123' onChange={handlePhoneChange}/>
                 </div>
             </div>
             
